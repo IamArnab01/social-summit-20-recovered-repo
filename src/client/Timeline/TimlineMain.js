@@ -6,7 +6,6 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import Aux from "../../hoc/Aux";
 import Fade from "react-reveal/Fade";
 
 function TabPanel(props) {
@@ -29,13 +28,13 @@ function TabPanel(props) {
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired
+  value: PropTypes.any.isRequired,
 };
 
 function allyProps(index) {
   return {
     id: `nav-tab-${index}`,
-    "aria-controls": `nav-tabpanel-${index}`
+    "aria-controls": `nav-tabpanel-${index}`,
   };
 }
 
@@ -43,7 +42,7 @@ function LinkTab(props) {
   return (
     <Tab
       component="a"
-      onClick={event => {
+      onClick={(event) => {
         event.preventDefault();
       }}
       {...props}
@@ -51,10 +50,10 @@ function LinkTab(props) {
   );
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   "@global": {
     ".MuiTab-root": {
-      minHeight: "60px"
+      minHeight: "60px",
     },
     ".MuiTab-wrapper": {
       fontFamily: ["'ibm plex serif'", "serif"].join(","),
@@ -62,39 +61,39 @@ const useStyles = makeStyles(theme => ({
       fontWeight: 600,
       color: "#fff",
       "@media (max-width:768px)": {
-        fontSize: "1rem"
-      }
+        fontSize: "1rem",
+      },
     },
     ".MuiPaper-elevation4": {
-      boxShadow: "none"
+      boxShadow: "none",
     },
     ".MuiTab-fullWidth": {
       maxWidth: "300px",
-      flexGrow: "1"
+      flexGrow: "1",
     },
     ".MuiTab-textColorInherit": {
-      opacity: 1
+      opacity: 1,
     },
     ".MuiAppBar-colorPrimary ": {
       backgroundColor: "#00a650",
-      color: "#111"
+      color: "#111",
     },
     ".PrivateTabIndicator-colorSecondary-127": {
       backgroundColor: "#FDD638",
-      height: "4px"
+      height: "4px",
     },
     ".PrivateTabIndicator-root-124": {
-      height: "3.25px"
+      height: "3.25px",
     },
     ".Mui-selected": {
-      color: "#fff"
-    }
+      color: "#fff",
+    },
   },
 
   root: {
     flexGrow: 1,
     paddingTop: "15vh",
-    background: "#f9fafb"
+    background: "#f9fafb",
   },
   container: {
     width: "100%",
@@ -105,23 +104,23 @@ const useStyles = makeStyles(theme => ({
     marginBottom: "7.5vh",
     "@media(max-width:320px)": {
       paddingRight: "5vw",
-      paddingLeft: "5vw"
-    }
+      paddingLeft: "5vw",
+    },
   },
   appBar: {
     margin: "0 18.5vw 0 18.5vw",
     "@media (max-width:768px)": {
-      margin: "0 !important"
+      margin: "0 !important",
     },
     "@media (min-width:1024px) and (max-width:1300px)": {
-      margin: "0 13.5vw 0 13.5vw"
+      margin: "0 13.5vw 0 13.5vw",
     },
     "@media (min-width:1600px)": {
-      margin: "0 22.5vw 0 22.5vw"
+      margin: "0 22.5vw 0 22.5vw",
     },
     "@media (min-width:1900px)": {
-      margin: "0 20vw 0 20vw"
-    }
+      margin: "0 20vw 0 20vw",
+    },
   },
   header: {
     textAlign: "center",
@@ -134,11 +133,11 @@ const useStyles = makeStyles(theme => ({
     color: "#2d3034",
     textTransform: "uppercase",
     "@media(max-width:600px)": {
-      fontSize: "36px"
+      fontSize: "36px",
     },
     "@media(max-width:320px)": {
-      fontSize: "30px"
-    }
+      fontSize: "30px",
+    },
   },
   line: {
     position: "absolute",
@@ -150,7 +149,7 @@ const useStyles = makeStyles(theme => ({
     marginLeft: "-47px",
     marginTop: "0",
     marginBottom: "20px",
-    boxSizing: "border-box"
+    boxSizing: "border-box",
   },
   para: {
     marginBottom: "25px",
@@ -161,8 +160,8 @@ const useStyles = makeStyles(theme => ({
     fontSize: "20px",
     "@media (max-width:600px)": {
       fontSize: "18px",
-      lineHeight: "1.7rem"
-    }
+      lineHeight: "1.7rem",
+    },
   },
   tabContent: {
     padding: "70px 85px 0px 85px",
@@ -172,30 +171,30 @@ const useStyles = makeStyles(theme => ({
       padding: "40px 0px",
       borderLeft: "none",
       borderRight: "none",
-      background: "transparent"
-    }
+      background: "transparent",
+    },
   },
   row: {
     display: "flex",
     flexWrap: "wrap",
     marginRight: "-15px",
     marginLeft: "-15px",
-    boxSizing: "border-box"
+    boxSizing: "border-box",
   },
   col: {
     flex: "0 0 50%",
     maxWidth: "50%",
     "@media (max-width:600px)": {
       flex: "none",
-      maxWidth: "100%"
-    }
+      maxWidth: "100%",
+    },
   },
   event: {
     marginBottom: "100px",
     position: "relative",
     "@media (max-width:600px)": {
-      marginBottom: "30px"
-    }
+      marginBottom: "30px",
+    },
   },
   img: {
     width: "85px",
@@ -204,17 +203,17 @@ const useStyles = makeStyles(theme => ({
     float: "left",
     marginTop: "38px",
     position: "relative",
-    zIndex: "2"
+    zIndex: "2",
   },
   eventContent: {
     marginLeft: "110px",
     marginRight: "25px",
     "@media (max-width:600px)": {
-      marginRight: "15px"
+      marginRight: "15px",
     },
     "@media (max-width:360px)": {
-      marginRight: "0"
-    }
+      marginRight: "0",
+    },
   },
   time: {
     display: "block",
@@ -222,7 +221,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: "18px",
     fontWeight: "300",
     fontFamily: "Rubik,sans-serif",
-    margin: "0 0 5px"
+    margin: "0 0 5px",
   },
   title: {
     fontSize: "17px",
@@ -231,12 +230,12 @@ const useStyles = makeStyles(theme => ({
     fontWeight: "500",
     "@media (max-width:600px)": {
       margin: "0",
-      fontSize: "16px"
+      fontSize: "16px",
     },
     "@media(max-width:320px)": {
       margin: "0",
-      fontSize: "15px"
-    }
+      fontSize: "15px",
+    },
   },
   content: {
     fontWeight: "300",
@@ -247,24 +246,24 @@ const useStyles = makeStyles(theme => ({
     margin: "0 0 10px",
     "@media (max-width:600px)": {
       lineHeight: "25px",
-      marginTop: "5px"
+      marginTop: "5px",
     },
     "@media(max-width:320px)": {
       fontSize: "15px",
       lineHeight: "20px",
-      marginTop: "4px"
-    }
+      marginTop: "4px",
+    },
   },
   author: {
     fontStyle: "italic",
     fontFamily: "Lora, serif",
     fontWeight: "300",
     marginBottom: "5px",
-    lineHeight: "26px"
+    lineHeight: "26px",
   },
   span: {
-    color: "#00a650"
-  }
+    color: "#00a650",
+  },
 }));
 
 function Timeline() {
@@ -276,7 +275,7 @@ function Timeline() {
   };
 
   return (
-    <Aux>
+    <div>
       <Fade bottom>
         <div className={classes.root}>
           <div className={classes.container}>
@@ -666,7 +665,7 @@ function Timeline() {
           </div>
         </div>
       </Fade>
-    </Aux>
+    </div>
   );
 }
 

@@ -4,31 +4,30 @@ import Grid from "@material-ui/core/Grid";
 import Fade from "react-reveal/Fade";
 import Navbar from "../Layout/Navbar/Navbar";
 import Footer from "../Layout/Footer/Footer";
-import Aux from "../../hoc/Aux";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#fff",
     flexGrow: 1,
-    padding: "10vh 10vw 10vh 10vw"
+    padding: "10vh 10vw 10vh 10vw",
   },
   image_bucket: {
     padding: theme.spacing(2),
     textAlign: "center",
-    verticalAlign: "middle"
+    verticalAlign: "middle",
   },
   image: {
     width: "12vw",
     verticalAlign: "middle",
     "@media(max-width:320px)": {
-      width: "25vw"
+      width: "25vw",
     },
     "@media(min-width:350px) and (max-width:500px)": {
-      width: "30vw"
+      width: "30vw",
     },
     "@media(min-width:500px) and (max-width:605px)": {
-      width: "15vw"
-    }
+      width: "15vw",
+    },
   },
   image2: {
     width: "12vw",
@@ -36,15 +35,15 @@ const useStyles = makeStyles(theme => ({
     verticalAlign: "middle",
     "@media(max-width:320px)": {
       width: "25vw",
-      height: "10vh"
+      height: "10vh",
     },
     "@media(min-width:350px) and (max-width:500px)": {
-      width: "30vw"
+      width: "30vw",
     },
     "@media(min-width:500px) and (max-width:605px)": {
       width: "20vw",
-      height: "10vh"
-    }
+      height: "10vh",
+    },
   },
   image3: {
     width: "40vw",
@@ -52,16 +51,16 @@ const useStyles = makeStyles(theme => ({
     verticalAlign: "middle",
     "@media(max-width:320px)": {
       width: "80vw",
-      height: "20vh"
+      height: "20vh",
     },
     "@media(min-width:350px) and (max-width:500px)": {
       width: "80vw",
-      height: "20vh"
+      height: "20vh",
     },
     "@media(min-width:500px) and (max-width:605px)": {
       width: "70vw",
-      height: "20vh"
-    }
+      height: "20vh",
+    },
   },
   header: {
     textAlign: "center",
@@ -77,14 +76,14 @@ const useStyles = makeStyles(theme => ({
     "@media(min-width:350px) and (max-width:605px)": {
       fontSize: "40px",
       fontWeight: 525,
-      letterSpacing: "1.25px"
+      letterSpacing: "1.25px",
     },
 
     "@media (max-width:320px)": {
       fontSize: "28px",
       fontWeight: 450,
-      letterSpacing: "1.25px"
-    }
+      letterSpacing: "1.25px",
+    },
   },
   subHeader: {
     textAlign: "center",
@@ -100,30 +99,30 @@ const useStyles = makeStyles(theme => ({
       fontSize: "30px",
       fontWeight: 400,
       letterSpacing: 0,
-      lineHeight: "40px"
+      lineHeight: "40px",
     },
     "@media(min-width:350px) and (max-width:420px)": {
       fontSize: "32px",
       fontWeight: 400,
       letterSpacing: 0,
-      lineHeight: "40px"
+      lineHeight: "40px",
     },
     "@media (max-width:320px)": {
       fontSize: "24px",
       fontWeight: 375,
       letterSpacing: 0,
-      lineHeight: "40px"
-    }
+      lineHeight: "40px",
+    },
   },
 
   container: {
     display: "flex",
     justifyContent: "space-around",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
   },
   wraper: {
     boxSizing: "border-box",
-    minHeight: "170px"
+    minHeight: "170px",
   },
   line: {
     position: "absolute",
@@ -135,8 +134,8 @@ const useStyles = makeStyles(theme => ({
     marginLeft: "-47px",
     marginTop: "-2.5vh",
     marginBottom: "20px",
-    boxSizing: "border-box"
-  }
+    boxSizing: "border-box",
+  },
 }));
 
 export default function NgoPartner() {
@@ -148,157 +147,157 @@ export default function NgoPartner() {
     { src: "/Images/Partners/Ngo/DALogo.jpg", link: "https://www.devalt.org" },
     {
       src: "/Images/Partners/Ngo/SED_india.JPG",
-      link: "http://www.sedindia.org"
+      link: "http://www.sedindia.org",
     },
     {
       src: "/Images/Partners/Ngo/seva_nidhi.jpg",
-      link: "http://www.sevanidhi.org"
+      link: "http://www.sevanidhi.org",
     },
-    { src: "/Images/Partners/Ngo/udyama.jpg", link: null }
+    { src: "/Images/Partners/Ngo/udyama.jpg", link: null },
   ];
 
   const EnergyPartner = [
     {
       src: "/Images/Partners/Company/main_teri_energy.png",
-      link: "https://www.teriin.org/"
-    }
+      link: "https://www.teriin.org/",
+    },
   ];
 
   const TrainingPartner = [
     {
       src: "/Images/Partners/Company/training/FinlandLabs.jpg",
-      link: "http://www.finlandlabs.com/"
-    }
+      link: "http://www.finlandlabs.com/",
+    },
   ];
 
   const EcoPartner = [
     {
       src: "/Images/Partners/Company/Make Room_Ecosystem PArtner.jpeg",
-      link: "http://makeroomindia.com/changemakersroom/"
-    }
+      link: "http://makeroomindia.com/changemakersroom/",
+    },
   ];
 
   const SustainabilityPartner = [
     {
       src: "/Images/Partners/Company/ceew.png",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const CSRPartner = [
     {
       src:
         "/Images/Partners/Company/Swayambhu Innovative Solutions PVT. LTD._CSR Partner.png",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const HostingPartner = [
     {
       src: "/Images/Partners/Company/D2C.png",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const PaymentPartner = [
     {
       src: "/Images/Partners/Company/thecollegefever.png",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const MerchandisePartner = [
     {
       src: "/Images/Partners/Company/TheSouledStore.png",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const EventPartner = [
     {
       src: "/Images/Partners/Company/HackerEarth.png",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const WorkshopPartner = [
     {
       src: "/Images/Partners/Company/DIC IITR.png",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const NewspaperPartner = [
     {
       src: "/Images/Partners/Company/Amar Ujala.jpg",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const CollaborationPartner = [
     {
       src: "/Images/Partners/Company/Swatantra Theartre.jpg",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const MediaPartner = [
     {
       src: "/Images/Partners/Company/DU Express.png",
-      link: null
+      link: null,
     },
     {
       src: "/Images/Partners/Company/The Education Tree.jpg",
-      link: null
+      link: null,
     },
     {
       src: "/Images/Partners/Company/youth incorporated.png",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const IncubationPartner = [
     {
       src: "/Images/Partners/Company/GHV Accelerator.png",
-      link: null
+      link: null,
     },
     {
       src: "/Images/Partners/Company/Tides.png",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const RestaurantPartner = [
     {
       src: "/Images/Partners/Restaurant/Olive.jpeg",
-      link: null
+      link: null,
     },
     {
       src: "/Images/Partners/Restaurant/Village-1.jpg",
-      link: null
+      link: null,
     },
     {
       src: "/Images/Partners/Restaurant/SVL.jpeg",
-      link: null
+      link: null,
     },
     {
       src: "/Images/Partners/Restaurant/Restro Cafe.jpeg",
-      link: null
+      link: null,
     },
     {
       src: "/Images/Partners/Restaurant/Desi Tadka Logo.jpg",
-      link: null
-    }
+      link: null,
+    },
   ];
 
   const UnescoArray = [
     {
       src: "/Images/Partners/Company/Unesco.jpg",
-      link: null
-    }
+      link: null,
+    },
   ];
 
-  const NGOImages = NGOArray.map(item => {
+  const NGOImages = NGOArray.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -320,7 +319,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Energy = EnergyPartner.map(item => {
+  const Energy = EnergyPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -342,7 +341,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Training = TrainingPartner.map(item => {
+  const Training = TrainingPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -364,7 +363,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Ecosystem = EcoPartner.map(item => {
+  const Ecosystem = EcoPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -386,7 +385,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Sustainability = SustainabilityPartner.map(item => {
+  const Sustainability = SustainabilityPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -408,7 +407,7 @@ export default function NgoPartner() {
     );
   });
 
-  const CSR = CSRPartner.map(item => {
+  const CSR = CSRPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -430,7 +429,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Hosting = HostingPartner.map(item => {
+  const Hosting = HostingPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -452,7 +451,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Payment = PaymentPartner.map(item => {
+  const Payment = PaymentPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -474,7 +473,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Merchandise = MerchandisePartner.map(item => {
+  const Merchandise = MerchandisePartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -496,7 +495,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Event = EventPartner.map(item => {
+  const Event = EventPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -518,7 +517,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Workshop = WorkshopPartner.map(item => {
+  const Workshop = WorkshopPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -540,7 +539,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Newspaper = NewspaperPartner.map(item => {
+  const Newspaper = NewspaperPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -561,7 +560,7 @@ export default function NgoPartner() {
       </Grid>
     );
   });
-  const Collaboration = CollaborationPartner.map(item => {
+  const Collaboration = CollaborationPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -583,7 +582,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Media = MediaPartner.map(item => {
+  const Media = MediaPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -605,7 +604,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Incubation = IncubationPartner.map(item => {
+  const Incubation = IncubationPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -627,7 +626,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Restaurant = RestaurantPartner.map(item => {
+  const Restaurant = RestaurantPartner.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -649,7 +648,7 @@ export default function NgoPartner() {
     );
   });
 
-  const Unesco = UnescoArray.map(item => {
+  const Unesco = UnescoArray.map((item) => {
     return (
       <Grid
         alignItems="center"
@@ -672,7 +671,7 @@ export default function NgoPartner() {
   });
 
   return (
-    <Aux>
+    <div>
       <Navbar />
       <div className={classes.root}>
         <Fade bottom>
@@ -800,6 +799,6 @@ export default function NgoPartner() {
         </Fade>
       </div>
       <Footer />
-    </Aux>
+    </div>
   );
 }

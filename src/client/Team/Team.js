@@ -3,25 +3,24 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import TeamCard from "./TeamCard";
 import Fade from "react-reveal/Fade";
-import Aux from "../../hoc/Aux";
 import teamData from "./teamData";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: "5vh"
+    paddingTop: "5vh",
   },
   container: {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-evenly",
-    marginTop: "5vh"
+    marginTop: "5vh",
   },
   wraper: {
     width: "100%",
     position: "relative",
     display: "block",
     textAlign: "center",
-    margin: "4vh auto"
+    margin: "4vh auto",
   },
   header: {
     fontSize: "3.5rem",
@@ -30,18 +29,18 @@ const useStyles = makeStyles(theme => ({
     lineHeight: "60px",
     fontFamily: "Roboto !important",
     "@media (min-width:1260px) and (max-width:1650px)": {
-      fontSize: "3rem"
+      fontSize: "3rem",
     },
     "@media (min-width:600px) and (max-width:768px)": {
-      fontSize: "40px"
+      fontSize: "40px",
     },
     "@media (max-width:500px)": {
-      fontSize: "28px"
+      fontSize: "28px",
     },
     "@media (max-width:320px)": {
-      fontSize: "24px"
-    }
-  }
+      fontSize: "24px",
+    },
+  },
 }));
 
 const data = teamData;
@@ -76,8 +75,8 @@ export default function TeamHeads() {
   });
 
   return (
-    <Aux>
+    <div>
       <div className={classes.root}>{teamGrid}</div>
-    </Aux>
+    </div>
   );
 }

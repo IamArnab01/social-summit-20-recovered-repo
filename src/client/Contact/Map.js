@@ -1,33 +1,32 @@
 import React from "react";
-import Aux from "../../hoc/Aux";
 import { makeStyles } from "@material-ui/core/styles";
 import Fade from "react-reveal/Fade";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     justifyContent: "center",
     boxSizing: "border-box",
-    marginTop: "2.5vh"
+    marginTop: "2.5vh",
   },
   mapouter: {
     position: "relative",
     textAlign: "right",
     height: "450px",
-    width: "100vw"
+    width: "100vw",
   },
   gmapCanvas: {
     overflow: "hidden",
     background: "none!important",
     height: "450px",
-    width: "100w"
-  }
+    width: "100w",
+  },
 }));
 
 export default function Map() {
   const classes = useStyles();
   return (
-    <Aux>
+    <div>
       <Fade bottom>
         <div className={classes.root}>
           <div className={classes.mapouter}>
@@ -47,6 +46,6 @@ export default function Map() {
           </div>
         </div>
       </Fade>
-    </Aux>
+    </div>
   );
 }
